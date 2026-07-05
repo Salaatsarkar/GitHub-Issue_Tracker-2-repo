@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,14 +13,13 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- external css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
-
 <body class="max-w-md min-h-screen mx-auto  shadow-lg rounded-md my-10 py-8">
     <section>
         <div class="">
@@ -30,31 +28,28 @@
             <p class="text-[#64748B] text-center">Sign in to manage your issues</p>
         </div>
 
-        <fieldset class="fieldset max-w-sm mx-auto mt-5">
+       <form action="">
+         <fieldset class="fieldset max-w-sm mx-auto mt-5">
             <label class="label font-medium text-[#1F2937]">Username</label>
-            <input type="text" class="input w-full rounded-md" placeholder="Enter Username" />
+            <input id="input-name" type="text" class="input w-full rounded-md" placeholder="Enter Username" required />
             <p class="text-[#4A00FF]">Default: admin</p>
 
             <label class="label font-medium text-[#1F2937]">Password</label>
-            <input type="password" class="input w-full rounded-md" placeholder="Enter Password" />
+            <input id="input-password" type="password" class="input w-full rounded-md" placeholder="Enter Password" required />
             <p class="text-[#4A00FF]">Default: admin123</p>
 
-            <button class="btn btn-primary mt-4 rounded-md">Sign In</button>
+            <button id="signin-btn" type="submit" class="btn btn-primary mt-4 rounded-md">Sign In</button>
              <div class="divider">OR</div>
         </fieldset>
+       </form>
 
         <p class="text-center text-neutral/50 ">Demo Credentials:</p>
         <div class="bg-base-200 py-5 max-w-sm mx-auto text-center rounded-lg mt-3">
             <p class="font-semibold">Username:  <span class="text-neutral/50">admin</span></p>
             <p class="font-semibold">Password:  <span class="text-neutral/50"> admin123</span></p>
         </div>
-        
-
     </section>
-    <!-- bg-base-200 border-base-300 rounded-box w-xs border p-4 mx-auto mt-5 -->
-
-
-
+   
+    <script src="./js/login.js"></script>
 </body>
-
 </html>
